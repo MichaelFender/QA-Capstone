@@ -76,25 +76,6 @@ test("CGI-Insights", async () => {
     // <= ^^
 })    
 
-/////////////////////////
-//Insights
-/////////////////////////
-test("CGI-Insights", async () => {
-  
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
-
-    let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
-
-    await insights.click()
-
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
-
-    // await home.click()
-    // <= ^^
-})    
 
 /////////////////////////
 //Careers
