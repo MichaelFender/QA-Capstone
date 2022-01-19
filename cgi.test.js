@@ -6,26 +6,37 @@ jest.setTimeout(30000)
 
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
+
+/////////////////////////
+//Services
+/////////////////////////
 test("CGI-Services", async () => {
   
     await driver.get('https://cgi.com/')
 
     driver.manage().window().maximize();
+    //^^ to maximize screen
 
-
+    //=>
     let cookie = await driver.findElement(By.css('#popup-buttons > button.decline-button.eu-cookie-compliance-secondary-button'))
 
     await cookie.click()
+    //<= ^^ one time cookie decline
 
     let services = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[1]/a'))
 
     await services.click()
-
+    // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
 
     await home.click()
+    // <= ^^
 })    
 
+
+/////////////////////////
+//Industries
+/////////////////////////
 test("CGI-Industries", async () => {
   
     await driver.get('https://cgi.com/')
@@ -37,25 +48,32 @@ test("CGI-Industries", async () => {
 
     await industries.click()
 
+    // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
 
     await home.click()
+    // <= ^^
 })    
 
+
+/////////////////////////
+//Insights
+/////////////////////////
 test("CGI-Insights", async () => {
   
     await driver.get('https://cgi.com/')
 
     driver.manage().window().maximize();
 
-
     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
 
     await insights.click()
 
+    // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
 
     await home.click()
+    // <= ^^
 })    
 
 /////////////////////////
@@ -67,30 +85,55 @@ test("CGI-Insights", async () => {
 
     driver.manage().window().maximize();
 
-
     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
 
     await insights.click()
 
+    // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
 
     await home.click()
+    // <= ^^
 })    
 
+/////////////////////////
+//Careers
+/////////////////////////
 test("CGI-Careers", async () => {
   
     await driver.get('https://cgi.com/')
 
     driver.manage().window().maximize();
 
-
     let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
 
     await careers.click()
 
+    // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
 
     await home.click()
+    // <= ^^
+}) 
+
+/////////////////////////
+//Mergers
+/////////////////////////
+test("CGI-Mergers", async () => {
+  
+    await driver.get('https://cgi.com/')
+
+    driver.manage().window().maximize();
+
+    let mergers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[5]/a'))
+
+    await mergers.click()
+
+    // => Back to homepage
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+    // <= ^^
 }) 
 
 //npx jest github.test.js
