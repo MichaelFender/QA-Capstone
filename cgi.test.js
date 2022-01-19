@@ -58,4 +58,39 @@ test("CGI-Insights", async () => {
     await home.click()
 })    
 
+/////////////////////////
+//Insights
+/////////////////////////
+test("CGI-Insights", async () => {
+  
+    await driver.get('https://cgi.com/')
+
+    driver.manage().window().maximize();
+
+
+    let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
+
+    await insights.click()
+
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+})    
+
+test("CGI-Careers", async () => {
+  
+    await driver.get('https://cgi.com/')
+
+    driver.manage().window().maximize();
+
+
+    let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
+
+    await careers.click()
+
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+}) 
+
 //npx jest github.test.js
