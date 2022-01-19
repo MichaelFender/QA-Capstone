@@ -136,4 +136,24 @@ test("CGI-Mergers", async () => {
     // <= ^^
 }) 
 
+/////////////////////////
+//Contact
+/////////////////////////
+test("CGI-Contact", async () => {
+  
+    await driver.get('https://cgi.com/')
+
+    driver.manage().window().maximize();
+
+    let contact = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[1]/a'))
+
+    await contact.click()
+
+    // => Back to homepage
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+    // <= ^^
+}) 
+
 //npx jest github.test.js
