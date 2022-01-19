@@ -193,9 +193,9 @@ test("CGI-About Us Video", async () => {
     await driver.findElement(By.css(".ytp-large-play-button")).click()
 
     // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
+    let home = await driver.findElement(By.css('#Calque_1'))
 
-    // await home.click()
+    await home.click()
     // <= ^^
 }) 
 //npx jest github.test.js
