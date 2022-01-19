@@ -27,9 +27,9 @@ test("CGI-Services", async () => {
 
     await services.click()
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 })    
 
@@ -39,9 +39,9 @@ test("CGI-Services", async () => {
 /////////////////////////
 test("CGI-Industries", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
 
     let industries = await driver.findElement(By.xpath('//*[@id="main-nav"]/div/nav/ul/li[2]/a'))
@@ -49,9 +49,9 @@ test("CGI-Industries", async () => {
     await industries.click()
 
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 })    
 
@@ -61,18 +61,18 @@ test("CGI-Industries", async () => {
 /////////////////////////
 test("CGI-Insights", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
 
     await insights.click()
 
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 })    
 
@@ -81,18 +81,18 @@ test("CGI-Insights", async () => {
 /////////////////////////
 test("CGI-Insights", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
 
     await insights.click()
 
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 })    
 
@@ -101,18 +101,18 @@ test("CGI-Insights", async () => {
 /////////////////////////
 test("CGI-Careers", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
     let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
 
     await careers.click()
 
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 }) 
 
@@ -121,18 +121,18 @@ test("CGI-Careers", async () => {
 /////////////////////////
 test("CGI-Mergers", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
     let mergers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[5]/a'))
 
     await mergers.click()
 
     // => Back to homepage
-    let home = await driver.findElement(By.css('#Calque_1'))
+    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    await home.click()
+    // await home.click()
     // <= ^^
 }) 
 
@@ -141,9 +141,9 @@ test("CGI-Mergers", async () => {
 /////////////////////////
 test("CGI-Contact", async () => {
   
-    await driver.get('https://cgi.com/')
+    // await driver.get('https://cgi.com/')
 
-    driver.manage().window().maximize();
+    // driver.manage().window().maximize();
 
     let contact = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[1]/a'))
 
@@ -156,4 +156,23 @@ test("CGI-Contact", async () => {
     // <= ^^
 }) 
 
+/////////////////////////
+//Global
+/////////////////////////
+test("CGI-Global", async () => {
+  
+    // await driver.get('https://cgi.com/')
+
+    // driver.manage().window().maximize();
+
+    let global = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[2]/a'))
+
+    await global.click()
+
+    // => Back to homepage
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+    // <= ^^
+}) 
 //npx jest github.test.js
