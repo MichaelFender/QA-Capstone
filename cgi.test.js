@@ -175,4 +175,28 @@ test("CGI-Global", async () => {
     await home.click()
     // <= ^^
 }) 
+
+/////////////////////////
+//About Us Video
+/////////////////////////
+test("CGI-About Us Video", async () => {
+  
+    // await driver.get('https://cgi.com/')
+
+    // driver.manage().window().maximize();
+
+    let aboutUs = await driver.findElement(By.css('#movie_player > div.ytp-cued-thumbnail-overlay > div'))
+
+    await aboutUs.click()
+
+    // let aboutUsVideo = await driver.findElement(By.xpath('//*[@id="js-pjax-container"]/div[2]/div/div[1]/div/div[2]/div[3]/div[1]/form/div[7]/button[1]'))
+
+    // await aboutUsVideo.click()
+
+    // => Back to homepage
+    // let home = await driver.findElement(By.css('#Calque_1'))
+
+    // await home.click()
+    // <= ^^
+}) 
 //npx jest github.test.js
