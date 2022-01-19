@@ -178,4 +178,25 @@ test("CGI-About Us Video", async () => {
     await driver.findElement(By.id("Calque_1")).click()
     // <= ^^
 }) 
+
+
+/////////////////////////
+//Client Stories
+/////////////////////////
+test("CGI-Client Stories", async () => {
+  
+    // await driver.get('https://cgi.com/')
+
+    // driver.manage().window().maximize();
+
+    let clientStories = await driver.findElement(By.xpath('/html/body/div[3]/div/div[2]/div/section/div/div/div/section[2]/div/h2/a'))
+
+    await clientStories.click()
+
+    // => Back to homepage
+    let home = await driver.findElement(By.css('#Calque_1'))
+
+    await home.click()
+    // <= ^^
+}) 
 //npx jest github.test.js
