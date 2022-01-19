@@ -185,13 +185,12 @@ test("CGI-About Us Video", async () => {
 
     // driver.manage().window().maximize();
 
-    let aboutUs = await driver.findElement(By.css('#movie_player > div.ytp-cued-thumbnail-overlay > div'))
+    let aboutUs = await driver.findElement(By.xpath('/html/body/div[3]/div/footer/div/div/div[2]/div/div/div[3]/div/nav/ul/li[1]/a'))
 
     await aboutUs.click()
 
-    // let aboutUsVideo = await driver.findElement(By.xpath('//*[@id="js-pjax-container"]/div[2]/div/div[1]/div/div[2]/div[3]/div[1]/form/div[7]/button[1]'))
-
-    // await aboutUsVideo.click()
+    await driver.switchTo().frame(0)
+    await driver.findElement(By.css(".ytp-large-play-button")).click()
 
     // => Back to homepage
     // let home = await driver.findElement(By.css('#Calque_1'))
