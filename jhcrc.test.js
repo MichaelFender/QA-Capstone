@@ -6,53 +6,196 @@ jest.setTimeout(30000)
 
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
-test("github", async () => {
+/////////////////////////
+//Topics
+/////////////////////////
+test("JHCRC-Topics", async () => {
   
-    await driver.get('https://github.com/')
+    await driver.get('https://coronavirus.jhu.edu/')
 
     driver.manage().window().maximize();
+    //^^ to maximize screen
 
-    let hub = await driver.findElement(By.xpath('/html/body/div[1]/header/div/div[2]/div[2]/div[2]/a'))
+    let topics = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[2]/div/div/span'))
 
-    await hub.click()
-
-    let oneHub = await driver.findElement(By.css('[name="login"]'))
-
-    await oneHub.sendKeys("MichaelFender")
-
-    let pass = await driver.findElement(By.css('[name="password"]'))
-
-    await pass.sendKeys("10Columbine99#")
-
-    let cl = await driver.findElement(By.css('[name="commit"]'))
-
-    await cl.click()
-
-    let cd = await driver.findElement(By.xpath('(//span[@class="dropdown-caret"])[2]'))
-
-    await cd.click()
-    //END
-
-//     let yourProfileButton = await driver.findElement(By.xpath('/html/body/div[1]/header/div[7]/details/details-menu/a[1]'))
-
-//    await yourProfileButton.click()
-//    await driver.sleep(2000)
-
-    await driver.get('https://github.com/michaelfender/')
+    await topics.click()
 
 
-    let editProfile = await driver.findElement(By.xpath('//*[@id="js-pjax-container"]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/div[2]/button'))
+//     let services = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[1]/a'))
 
-    await editProfile.click()
+//     await services.click()
+//     // => Back to homepage
+//     // let home = await driver.findElement(By.css('#Calque_1'))
 
-    let textArea = await driver.findElement(By.xpath('//*[@id="user_profile_bio"]'))
-    await textArea.sendKeys('Future QA analyst')
-    await driver.sleep(2000)
+//     // await home.click()
+//     // <= ^^
+// })    
 
-    let saveBtn = await driver.findElement(By.xpath('//*[@id="js-pjax-container"]/div[2]/div/div[1]/div/div[2]/div[3]/div[1]/form/div[7]/button[1]'))
-    await saveBtn.click()
-    await driver.sleep(5000)
 
-})    
+// /////////////////////////
+// //Industries
+// /////////////////////////
+// test("CGI-Industries", async () => {
+  
+//     // await driver.get('https://cgi.com/')
 
-//npx jest github.test.js
+//     // driver.manage().window().maximize();
+
+
+//     let industries = await driver.findElement(By.xpath('//*[@id="main-nav"]/div/nav/ul/li[2]/a'))
+
+//     await industries.click()
+
+//     // => Back to homepage
+//     // let home = await driver.findElement(By.css('#Calque_1'))
+
+//     // await home.click()
+//     // <= ^^
+// })    
+
+
+// /////////////////////////
+// //Insights
+// /////////////////////////
+// test("CGI-Insights", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
+
+//     await insights.click()
+
+//     // => Back to homepage
+//     // let home = await driver.findElement(By.css('#Calque_1'))
+
+//     // await home.click()
+//     // <= ^^
+// })    
+
+
+// /////////////////////////
+// //Careers
+// /////////////////////////
+// test("CGI-Careers", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
+
+//     await careers.click()
+
+//     // => Back to homepage
+//     // let home = await driver.findElement(By.css('#Calque_1'))
+
+//     // await home.click()
+//     // <= ^^
+// }) 
+
+// /////////////////////////
+// //Mergers
+// /////////////////////////
+// test("CGI-Mergers", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let mergers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[5]/a'))
+
+//     await mergers.click()
+
+//     // => Back to homepage
+//     // let home = await driver.findElement(By.css('#Calque_1'))
+
+//     // await home.click()
+//     // <= ^^
+// }) 
+
+// /////////////////////////
+// //Contact
+// /////////////////////////
+// test("CGI-Contact", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let contact = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[1]/a'))
+
+//     await contact.click()
+
+//     // => Back to homepage
+//     let home = await driver.findElement(By.css('#Calque_1'))
+
+//     await home.click()
+//     // <= ^^
+// }) 
+
+// /////////////////////////
+// //Global
+// /////////////////////////
+// test("CGI-Global", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let global = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[2]/a'))
+
+//     await global.click()
+
+//     // => Back to homepage
+//     let home = await driver.findElement(By.css('#Calque_1'))
+
+//     await home.click()
+//     // <= ^^
+// }) 
+
+// /////////////////////////
+// //About Us Video
+// /////////////////////////
+// test("CGI-About Us Video", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let aboutUs = await driver.findElement(By.xpath('/html/body/div[3]/div/footer/div/div/div[2]/div/div/div[3]/div/nav/ul/li[1]/a'))
+
+//     await aboutUs.click()
+
+//     await driver.switchTo().frame(0)
+//     await driver.findElement(By.css(".ytp-large-play-button")).click()
+
+//     // => Back to homepage
+//     await driver.switchTo().defaultContent()
+//     await driver.findElement(By.id("Calque_1")).click()
+//     // <= ^^
+// }) 
+
+
+// /////////////////////////
+// //Client Stories
+// /////////////////////////
+// test("CGI-Client Stories", async () => {
+  
+//     // await driver.get('https://cgi.com/')
+
+//     // driver.manage().window().maximize();
+
+//     let clientStories = await driver.findElement(By.xpath('/html/body/div[3]/div/div[2]/div/section/div/div/div/section[2]/div/h2/a'))
+
+//     await clientStories.click()
+
+//     // => Back to homepage
+//     let home = await driver.findElement(By.css('#Calque_1'))
+
+//     await home.click()
+//     // <= ^^
+}) 
+
+//npx jest jhcrc.test.js
