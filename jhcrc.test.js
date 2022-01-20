@@ -82,25 +82,21 @@ test("JHCRC-Global Map", async () => {
     // <= ^^
 }) 
 
-// /////////////////////////
-// //Contact
-// /////////////////////////
-// test("CGI-Contact", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//U.S. Map
+/////////////////////////
+test("JHCRC-U.S. Map", async () => {
 
-//     // driver.manage().window().maximize();
+    let usMap = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[1]/div/div[1]/article/ul/li[5]/a[2]'))
 
-//     let contact = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[1]/a'))
+    await usMap.click()
 
-//     await contact.click()
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
 
-//     // => Back to homepage
-//     let home = await driver.findElement(By.css('#Calque_1'))
-
-//     await home.click()
-//     // <= ^^
-// }) 
+    await home.click()
+    // <= ^^
+}) 
 
 // /////////////////////////
 // //Global
