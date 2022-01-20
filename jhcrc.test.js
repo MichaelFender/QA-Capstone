@@ -28,8 +28,6 @@ test("JHCRC-Topics", async () => {
 /////////////////////////
 test("JHCRC-Region", async () => {
 
-
-
     let region = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[3]/a'))
 
     await region.click()
@@ -37,25 +35,16 @@ test("JHCRC-Region", async () => {
 })    
 
 
-// /////////////////////////
-// //Insights
-// /////////////////////////
-// test("CGI-Insights", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//Events & News
+/////////////////////////
+test("JHCRC-Events & News", async () => {
 
-//     // driver.manage().window().maximize();
 
-//     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
+    let eventsAndNews = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[4]/a'))
 
-//     await insights.click()
-
-//     // => Back to homepage
-//     // let home = await driver.findElement(By.css('#Calque_1'))
-
-//     // await home.click()
-//     // <= ^^
-// })    
+    await eventsAndNews.click()
+})    
 
 
 // /////////////////////////
