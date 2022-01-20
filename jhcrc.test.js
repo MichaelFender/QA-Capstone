@@ -57,6 +57,12 @@ test("JHCRC-About", async () => {
 
     await about.click()
 
+        // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
+
+    await home.click()
+    // <= ^^
+
 }) 
 
 // /////////////////////////
