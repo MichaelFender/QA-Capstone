@@ -117,7 +117,7 @@ test("JHCRC-Vaccines", async () => {
 /////////////////////////
 //PANDEMIC DATA INITIATIVE
 /////////////////////////
-test("JHCRC-PANDEMIC DATA INITIATIVE", async () => {
+test("JHCRC-Pandemic Data Initiative", async () => {
 
     let pandemicDataInitiative = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[5]/a/div/div/h2'))
 
@@ -132,24 +132,21 @@ test("JHCRC-PANDEMIC DATA INITIATIVE", async () => {
 }) 
 
 
-// /////////////////////////
-// //Client Stories
-// /////////////////////////
-// test("CGI-Client Stories", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//Tracking
+/////////////////////////
+test("JHCRC-Tracking", async () => {
 
-//     // driver.manage().window().maximize();
 
-//     let clientStories = await driver.findElement(By.xpath('/html/body/div[3]/div/div[2]/div/section/div/div/div/section[2]/div/h2/a'))
+    let tracking = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[7]/a/div/div/h2'))
 
-//     await clientStories.click()
+    await tracking.click()
 
-//     // => Back to homepage
-//     let home = await driver.findElement(By.css('#Calque_1'))
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
 
-//     await home.click()
-//     // <= ^^
-// }) 
+    await home.click()
+    // <= ^^
+}) 
 
 //npx jest jhcrc.test.js
