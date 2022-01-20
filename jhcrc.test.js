@@ -65,25 +65,22 @@ test("JHCRC-About", async () => {
 
 }) 
 
-// /////////////////////////
-// //Mergers
-// /////////////////////////
-// test("CGI-Mergers", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//Global Map
+/////////////////////////
+test("JHCRC-Global Map", async () => {
 
-//     // driver.manage().window().maximize();
 
-//     let mergers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[5]/a'))
+    let globalMap = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[1]/div/div[1]/article/ul/li[5]/a[1]'))
 
-//     await mergers.click()
+    await globalMap.click()
 
-//     // => Back to homepage
-//     // let home = await driver.findElement(By.css('#Calque_1'))
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
 
-//     // await home.click()
-//     // <= ^^
-// }) 
+    await home.click()
+    // <= ^^
+}) 
 
 // /////////////////////////
 // //Contact
