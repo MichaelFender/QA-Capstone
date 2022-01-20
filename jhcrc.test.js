@@ -20,38 +20,21 @@ test("JHCRC-Topics", async () => {
 
     await topics.click()
 
-
-//     let services = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[1]/a'))
-
-//     await services.click()
-//     // => Back to homepage
-//     // let home = await driver.findElement(By.css('#Calque_1'))
-
-//     // await home.click()
-//     // <= ^^
-// })    
+})    
 
 
-// /////////////////////////
-// //Industries
-// /////////////////////////
-// test("CGI-Industries", async () => {
-  
-//     // await driver.get('https://cgi.com/')
-
-//     // driver.manage().window().maximize();
+/////////////////////////
+//Region
+/////////////////////////
+test("JHCRC-Region", async () => {
 
 
-//     let industries = await driver.findElement(By.xpath('//*[@id="main-nav"]/div/nav/ul/li[2]/a'))
 
-//     await industries.click()
+    let region = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[3]/a'))
 
-//     // => Back to homepage
-//     // let home = await driver.findElement(By.css('#Calque_1'))
+    await region.click()
 
-//     // await home.click()
-//     // <= ^^
-// })    
+})    
 
 
 // /////////////////////////
@@ -196,6 +179,6 @@ test("JHCRC-Topics", async () => {
 
 //     await home.click()
 //     // <= ^^
-}) 
+// }) 
 
 //npx jest jhcrc.test.js
