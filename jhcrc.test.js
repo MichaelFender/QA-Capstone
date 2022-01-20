@@ -98,25 +98,21 @@ test("JHCRC-U.S. Map", async () => {
     // <= ^^
 }) 
 
-// /////////////////////////
-// //Global
-// /////////////////////////
-// test("CGI-Global", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//Vaccines
+/////////////////////////
+test("JHCRC-Vaccines", async () => {
 
-//     // driver.manage().window().maximize();
+    let vaccines = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[3]/a/div/div/h2'))
 
-//     let global = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[2]/a'))
+    await vaccines.click()
 
-//     await global.click()
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
 
-//     // => Back to homepage
-//     let home = await driver.findElement(By.css('#Calque_1'))
-
-//     await home.click()
-//     // <= ^^
-// }) 
+    await home.click()
+    // <= ^^
+}) 
 
 // /////////////////////////
 // //About Us Video
