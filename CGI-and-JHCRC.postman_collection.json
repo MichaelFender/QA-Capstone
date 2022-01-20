@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "92669fa6-42ae-4c0d-8575-2a67d377b62e",
+		"name": "CGI-and-JHCRC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CGI-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CGI-2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CGI-3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CGI-4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CGI-5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JHCRC-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JHCRC-2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JHCRC-3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JHCRC-4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JHCRC-5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
