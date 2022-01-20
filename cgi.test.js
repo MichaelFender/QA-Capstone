@@ -26,6 +26,7 @@ test("CGI-Services", async () => {
     let services = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[1]/a'))
 
     await services.click()
+    await driver.sleep(2000)
     // => Back to homepage
     // let home = await driver.findElement(By.css('#Calque_1'))
 
@@ -47,6 +48,7 @@ test("CGI-Industries", async () => {
     let industries = await driver.findElement(By.xpath('//*[@id="main-nav"]/div/nav/ul/li[2]/a'))
 
     await industries.click()
+    await driver.sleep(2000)
 
     // => Back to homepage
     // let home = await driver.findElement(By.css('#Calque_1'))
@@ -199,4 +201,4 @@ test("CGI-Client Stories", async () => {
     await home.click()
     // <= ^^
 }) 
-//npx jest github.test.js
+//npx jest cgi.test.js
