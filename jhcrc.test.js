@@ -114,27 +114,22 @@ test("JHCRC-Vaccines", async () => {
     // <= ^^
 }) 
 
-// /////////////////////////
-// //About Us Video
-// /////////////////////////
-// test("CGI-About Us Video", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//PANDEMIC DATA INITIATIVE
+/////////////////////////
+test("JHCRC-PANDEMIC DATA INITIATIVE", async () => {
 
-//     // driver.manage().window().maximize();
+    let pandemicDataInitiative = await driver.findElement(By.xpath('/html/body/div[1]/div/div[2]/div[5]/a/div/div/h2'))
 
-//     let aboutUs = await driver.findElement(By.xpath('/html/body/div[3]/div/footer/div/div/div[2]/div/div/div[3]/div/nav/ul/li[1]/a'))
+    await pandemicDataInitiative.click()
 
-//     await aboutUs.click()
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
 
-//     await driver.switchTo().frame(0)
-//     await driver.findElement(By.css(".ytp-large-play-button")).click()
+    await home.click()
+    // <= ^^
 
-//     // => Back to homepage
-//     await driver.switchTo().defaultContent()
-//     await driver.findElement(By.id("Calque_1")).click()
-//     // <= ^^
-// }) 
+}) 
 
 
 // /////////////////////////
