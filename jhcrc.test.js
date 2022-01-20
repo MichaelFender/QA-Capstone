@@ -47,25 +47,17 @@ test("JHCRC-Events & News", async () => {
 })    
 
 
-// /////////////////////////
-// //Careers
-// /////////////////////////
-// test("CGI-Careers", async () => {
-  
-//     // await driver.get('https://cgi.com/')
+/////////////////////////
+//About
+/////////////////////////
+test("JHCRC-About", async () => {
 
-//     // driver.manage().window().maximize();
 
-//     let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
+    let about = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/div[2]/ul/li[5]/a'))
 
-//     await careers.click()
+    await about.click()
 
-//     // => Back to homepage
-//     // let home = await driver.findElement(By.css('#Calque_1'))
-
-//     // await home.click()
-//     // <= ^^
-// }) 
+}) 
 
 // /////////////////////////
 // //Mergers
