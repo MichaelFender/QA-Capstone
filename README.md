@@ -11,6 +11,7 @@
 ---
 
 ## <a name="stack"></a>Tech Stack
+JavaScript
 Selenium
 
 ## <a name="features"></a>Features
