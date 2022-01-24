@@ -213,5 +213,14 @@ test("CGI-Client Stories", async () => {
     // <= ^^
 }) 
 
+
+
+// test("CGI-To Have URL", async () => {
+// browser.url('https://www.cgi.com/en')
+// await expect(browser).toHaveUrl('https://www.cgi.com/en')
+// })
+
+
+
 //start test with following code 
 //npx jest cgi.test.js
