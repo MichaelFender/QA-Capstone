@@ -212,4 +212,6 @@ test("CGI-Client Stories", async () => {
     await home.click()
     // <= ^^
 }) 
+
+//start test with the following code
 //npx jest cgi.test.js

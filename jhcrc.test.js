@@ -164,4 +164,5 @@ test("JHCRC-Tracking", async () => {
     // <= ^^
 }) 
 
+//start test with the following code
 //npx jest jhcrc.test.js
