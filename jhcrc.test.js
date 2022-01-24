@@ -164,5 +164,29 @@ test("JHCRC-Tracking", async () => {
     // <= ^^
 }) 
 
+/////////////////////////
+//Search Bar Data by Region 
+/////////////////////////
+test("JHCRC-Search By Region", async () => {
+
+
+    let searchBar = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[6]/div/div[1]/form/input'))
+    await searchBar.sendKeys("canada")
+    
+    
+    let submitSearch = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[6]/div/div[1]/form/button/img'))
+    await submitSearch.click()
+    await driver.sleep(3000)
+
+
+
+    // => Back to homepage
+    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
+
+    await home.click()
+    await driver.sleep(1000)
+    // <= ^^
+}) 
+
 //start test with the following code
 //npx jest jhcrc.test.js
