@@ -15,13 +15,12 @@ Testing the functionality of:<br>
 
 ---
 
-## <a name="trello"></a>Trello
-<dt>JavaScript</dt>
-<dt>Selenium</dt>
+## <a name="trello"></a>Trello Test
+[Trello Link](https://trello.com/invite/b/O0vNcbsr/7e3d72b9375ce757685eb9667fe271f4/qa-capstone)
 
 
-## <a name="API"></a>API
+## <a name="API"></a>Postman API Testing
 ![alt text](https://github.com/MichaelFender/QA-Capstone/blob/main/Postman.JPG)
 ---
 ## <a name="about"></a>About The Developer
-Michael Fender has an extensive background in psychiatric nursing.  He enjoys photography, camping, and snacking while programming!  You can learn more about him on his [LinkedIn](https://www.linkedin.com/in/michael-fender-57652b124/)
+Michael Fender is an Associate Technical Consultant with Perficient’s LDC team.  He enjoys photography, camping, and snacking while programming!  You can learn more about him on his [LinkedIn](https://www.linkedin.com/in/michael-fender-57652b124/)
