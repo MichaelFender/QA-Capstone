@@ -2,17 +2,23 @@
 ---
 ## Table of Contents
 * [Summary](#summary)
-* [Tech Stack](#techStack)
+* [Trello](#trello)
 * [API](#api)
 * [About the Developer](#about)
 ---
 ## <a name="summary"></a>Summary
-**QA-Capstone**
+
+Testing the functionality of:<br>
+[CGI](https://www.cgi.com/en) - http://www.cgi.com/en<br>
+[JHCRC](https://coronavirus.jhu.edu/) - https://coronavirus.jhu.edu/
+
+
 ---
 
-## <a name="stack"></a>Tech Stack
-JavaScript
-Selenium
+## <a name="trello"></a>Trello
+<dt>JavaScript</dt>
+<dt>Selenium</dt>
+
 
 ## <a name="API"></a>API
 ![alt text](https://github.com/MichaelFender/QA-Capstone/blob/main/Postman.JPG)
