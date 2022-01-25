@@ -22,7 +22,7 @@ Testing the functionality of:<br>
 
 ## <a name="API"></a>Postman API Testing
 ![alt text](https://github.com/MichaelFender/QA-Capstone/blob/main/Postman.JPG)
-https://github.com/MichaelFender/QA-Capstone/blob/main/Postman.JPG
+
 ---
 ## <a name="about"></a>About The Developer
 Michael Fender is an Associate Technical Consultant with Perficient’s LDC team.  He enjoys photography, camping, and snacking while programming!  You can learn more about him on his [LinkedIn](https://www.linkedin.com/in/michael-fender-57652b124/)
