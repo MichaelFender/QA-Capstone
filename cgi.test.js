@@ -197,10 +197,6 @@ test("CGI-About Us Video", async () => {
 /////////////////////////
 test("CGI-Client Stories", async () => {
   
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
-
     let clientStories = await driver.findElement(By.xpath('/html/body/div[3]/div/div[2]/div/section/div/div/div/section[2]/div/h2/a'))
 
     await clientStories.click()
