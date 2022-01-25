@@ -27,11 +27,7 @@ test("CGI-Services", async () => {
 
     await services.click()
     await driver.sleep(1000)
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
 
-    // await home.click()
-    // <= ^^
 })    
 
 
@@ -40,21 +36,11 @@ test("CGI-Services", async () => {
 /////////////////////////
 test("CGI-Industries", async () => {
   
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
-
-
     let industries = await driver.findElement(By.xpath('//*[@id="main-nav"]/div/nav/ul/li[2]/a'))
 
     await industries.click()
     await driver.sleep(1000)
 
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
-
-    // await home.click()
-    // <= ^^
 })    
 
 
@@ -62,21 +48,12 @@ test("CGI-Industries", async () => {
 //Insights
 /////////////////////////
 test("CGI-Insights", async () => {
-  
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
 
     let insights = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[3]/a'))
 
     await insights.click()
     await driver.sleep(1000)
 
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
-
-    // await home.click()
-    // <= ^^
 })    
 
 
@@ -84,42 +61,25 @@ test("CGI-Insights", async () => {
 //Careers
 /////////////////////////
 test("CGI-Careers", async () => {
-  
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
 
     let careers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[4]/a'))
 
     await careers.click()
     await driver.sleep(1000)
 
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
-
-    // await home.click()
-    // <= ^^
 }) 
 
 /////////////////////////
 //Mergers
 /////////////////////////
 test("CGI-Mergers", async () => {
-  
-    // await driver.get('https://cgi.com/')
 
-    // driver.manage().window().maximize();
 
     let mergers = await driver.findElement(By.xpath('/html/body/header/div/div[3]/div/nav/ul/li[5]/a'))
 
     await mergers.click()
     await driver.sleep(1000)
 
-    // => Back to homepage
-    // let home = await driver.findElement(By.css('#Calque_1'))
-
-    // await home.click()
-    // <= ^^
 }) 
 
 /////////////////////////
@@ -127,10 +87,6 @@ test("CGI-Mergers", async () => {
 /////////////////////////
 test("CGI-Contact", async () => {
   
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
-
     let contact = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[1]/a'))
 
     await contact.click()
@@ -138,9 +94,7 @@ test("CGI-Contact", async () => {
 
     // => Back to homepage
     let home = await driver.findElement(By.css('#Calque_1'))
-
     await home.click()
-    // await driver.sleep(1000)
     // <= ^^
 }) 
 
@@ -148,10 +102,6 @@ test("CGI-Contact", async () => {
 //Global
 /////////////////////////
 test("CGI-Global", async () => {
-  
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
 
     let global = await driver.findElement(By.xpath('/html/body/header/div/div[4]/div/nav/div[2]/a'))
 
@@ -170,10 +120,6 @@ test("CGI-Global", async () => {
 //About Us Video
 /////////////////////////
 test("CGI-About Us Video", async () => {
-  
-    // await driver.get('https://cgi.com/')
-
-    // driver.manage().window().maximize();
 
     let aboutUs = await driver.findElement(By.xpath('/html/body/div[3]/div/footer/div/div/div[2]/div/div/div[3]/div/nav/ul/li[1]/a'))
 
@@ -181,11 +127,13 @@ test("CGI-About Us Video", async () => {
     await driver.sleep(1000)
 
     await driver.switchTo().frame(0)
+    ///^^to be able to click into embedded YouTube video
     await driver.findElement(By.css(".ytp-large-play-button")).click()
     await driver.sleep(5000)
 
     // => Back to homepage
     await driver.switchTo().defaultContent()
+    //^^ To switch back out of embedded Youtube video
     await driver.findElement(By.id("Calque_1")).click()
     await driver.sleep(1000)
     // <= ^^
@@ -208,15 +156,6 @@ test("CGI-Client Stories", async () => {
     await home.click()
     // <= ^^
 }) 
-
-
-
-// test("CGI-To Have URL", async () => {
-// browser.url('https://www.cgi.com/en')
-// await expect(browser).toHaveUrl('https://www.cgi.com/en')
-// })
-
-
 
 //start test with following code 
 //npx jest cgi.test.js
