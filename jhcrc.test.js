@@ -183,6 +183,7 @@ test("JHCRC-Search By Region", async () => {
     await driver.sleep(3000)
 
     await driver.get('https://coronavirus.jhu.edu/')
+    //^^ refresh page
 
     driver.manage().window().maximize();
     //^^ to maximize screen
