@@ -184,6 +184,96 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Apple1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apple2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apple3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apple4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apple5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
+					"protocol": "chrome-extension",
+					"host": [
+						"mgijmajocgfcbeboacabfgobmjgjcoja"
+					],
+					"path": [
+						"content.min.css"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
