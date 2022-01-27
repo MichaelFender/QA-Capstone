@@ -6,6 +6,9 @@ jest.setTimeout(30000)
 
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
+const region = "canada"
+//^^ this string can be changed to another region- the variable is used in the Search By Region test
+
 /////////////////////////
 //Topics
 /////////////////////////
@@ -171,21 +174,19 @@ test("JHCRC-Search By Region", async () => {
 
 
     let searchBar = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[6]/div/div[1]/form/input'))
-    await searchBar.sendKeys("canada")
-    
-    
+    await searchBar.sendKeys(region)
+    //sends a string, that is assigned to the variable "region", to the searchbar
+ 
+   
     let submitSearch = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div/div[2]/ul/li[6]/div/div[1]/form/button/img'))
     await submitSearch.click()
     await driver.sleep(3000)
 
+    await driver.get('https://coronavirus.jhu.edu/')
 
+    driver.manage().window().maximize();
+    //^^ to maximize screen
 
-    // => Back to homepage
-    let home = await driver.findElement(By.xpath('/html/body/div[1]/div/header/div[1]/a/img'))
-
-    await home.click()
-    await driver.sleep(1000)
-    // <= ^^
 }) 
 
 //start test with the following code
