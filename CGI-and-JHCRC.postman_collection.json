@@ -29,13 +29,58 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://c.go-mpulse.net/api/config.json?key=JY7KR-MB2SB-9NUXM-8LVFL-CLLK6&d=www.cgi.com&t=5478291&v=1.687.0&sl=1&si=7274940f-a1d6-4978-8aec-1a8cd7830ec6-r6hmt7&bcn=%2F%2F173bf105.akstat.io%2F&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,History,Angular,Backbone,Ember,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,Early,LOGN&acao=&ak.ai=425869",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"c",
+						"go-mpulse",
+						"net"
 					],
 					"path": [
-						"content.min.css"
+						"api",
+						"config.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "JY7KR-MB2SB-9NUXM-8LVFL-CLLK6"
+						},
+						{
+							"key": "d",
+							"value": "www.cgi.com"
+						},
+						{
+							"key": "t",
+							"value": "5478291"
+						},
+						{
+							"key": "v",
+							"value": "1.687.0"
+						},
+						{
+							"key": "sl",
+							"value": "1"
+						},
+						{
+							"key": "si",
+							"value": "7274940f-a1d6-4978-8aec-1a8cd7830ec6-r6hmt7"
+						},
+						{
+							"key": "bcn",
+							"value": "%2F%2F173bf105.akstat.io%2F"
+						},
+						{
+							"key": "plugins",
+							"value": "AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,History,Angular,Backbone,Ember,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,Early,LOGN"
+						},
+						{
+							"key": "acao",
+							"value": ""
+						},
+						{
+							"key": "ak.ai",
+							"value": "425869"
+						}
 					]
 				}
 			},
@@ -47,13 +92,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://www.cgi.com/sites/default/files/js/js_YZnzFtZ72TtacYSoV7PswwCOmW2DER4FTqlk03JPG5M.js",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"www",
+						"cgi",
+						"com"
 					],
 					"path": [
-						"content.min.css"
+						"sites",
+						"default",
+						"files",
+						"js",
+						"js_YZnzFtZ72TtacYSoV7PswwCOmW2DER4FTqlk03JPG5M.js"
 					]
 				}
 			},
@@ -65,13 +116,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://syndication.twitter.com/settings",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"syndication",
+						"twitter",
+						"com"
 					],
 					"path": [
-						"content.min.css"
+						"settings"
 					]
 				}
 			},
@@ -83,13 +136,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://www.cgi.com/sites/default/files/js/js_KAOYI9Dh25uc4sYtQqR0eC5L_RHdqSsrSmGq0rdkLp4.js",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"www",
+						"cgi",
+						"com"
 					],
 					"path": [
-						"content.min.css"
+						"sites",
+						"default",
+						"files",
+						"js",
+						"js_KAOYI9Dh25uc4sYtQqR0eC5L_RHdqSsrSmGq0rdkLp4.js"
 					]
 				}
 			},
@@ -101,13 +160,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://coronavirus.jhu.edu/settings.json",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"coronavirus",
+						"jhu",
+						"edu"
 					],
 					"path": [
-						"content.min.css"
+						"settings.json"
 					]
 				}
 			},
@@ -119,13 +180,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://jhucoronavirus.azureedge.net/jhucoronavirus/daily-video.json",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"jhucoronavirus",
+						"azureedge",
+						"net"
 					],
 					"path": [
-						"content.min.css"
+						"jhucoronavirus",
+						"daily-video.json"
 					]
 				}
 			},
@@ -155,13 +219,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://jhucoronavirus.azureedge.net/jhucoronavirus/state_vaccination_rates.json",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"jhucoronavirus",
+						"azureedge",
+						"net"
 					],
 					"path": [
-						"content.min.css"
+						"jhucoronavirus",
+						"state_vaccination_rates.json"
 					]
 				}
 			},
@@ -173,13 +240,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "chrome-extension://mgijmajocgfcbeboacabfgobmjgjcoja/content.min.css",
-					"protocol": "chrome-extension",
+					"raw": "https://coronavirus.jhu.edu/datasets/geo/worldmap.geojson",
+					"protocol": "https",
 					"host": [
-						"mgijmajocgfcbeboacabfgobmjgjcoja"
+						"coronavirus",
+						"jhu",
+						"edu"
 					],
 					"path": [
-						"content.min.css"
+						"datasets",
+						"geo",
+						"worldmap.geojson"
 					]
 				}
 			},
