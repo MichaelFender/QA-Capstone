@@ -188,6 +188,8 @@ test("JHCRC-Search By Region", async () => {
     driver.manage().window().maximize();
     //^^ to maximize screen
 
+    driver.quit()
+
 }) 
 
 //start test with the following code

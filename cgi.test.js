@@ -155,7 +155,10 @@ test("CGI-Client Stories", async () => {
 
     await home.click()
     // <= ^^
+    driver.quit()
 }) 
+
+
 
 //start test with following code 
 //npx jest cgi.test.js
